@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
 :root {
   --g1: rgb(98, 0, 234);
   --g2: rgb(236, 64, 122);
@@ -14,9 +16,9 @@
 }
 
 .body {
-  animation: background-pan 3s linear infinite;
+  animation: background-pan 20s linear infinite;
   background: linear-gradient(
-    to right,
+    to bottom right,
     var(--g1),
     var(--g2),
     var(--g1)
@@ -26,14 +28,6 @@
   overflow: hidden;
   margin: 0px;
   display: flex;
-}
-
-.centered {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 50%;
 }
 
 .tiles {
@@ -68,22 +62,22 @@
   z-index: 3;
 }
 
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  transform: translate(0%, -50%); 
+  user-select: none;
+}
 
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
 
 /* Style for the parent container */
-.container {
-  width: 100vw; /* Adjust the width as needed */
-  height: 100vh; /* Adjust the height as needed */
-  background-attachment: fixed; /* Fixed background */
-  overflow: hidden; /* Prevent scrollbars on the parent container */
-  position: relative; /* Relative positioning for children */
-  z-index: 2;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 /* Style for the child divs */
 .child {
@@ -92,12 +86,12 @@
   white-space: nowrap; /* Prevent line breaks within child content */
   display: flex; /* Enable flex layout */
   align-items: center;
+  overflow-x: auto; 
 }
 
-.container .child:nth-child(2) {
-  overflow-x: auto; /* or scroll, hidden, etc. */
-  direction: rtl; 
-}
+/* .container .child:nth-child(2) {
+  overflow-x: auto; 
+} */
 
 /* Add some padding to the child divs for content */
 .child-content {
@@ -107,3 +101,7 @@
 .top-left {
   width: 50vw;
 }
+
+/* .child-content:nth-child(2) {
+  padding: 10px;
+} */
