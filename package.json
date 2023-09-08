@@ -1,8 +1,4 @@
 {
-<<<<<<< Updated upstream
-=======
-  "homepage": "https://cedricangelosina-on.github.io",
->>>>>>> Stashed changes
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,11 +19,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-<<<<<<< Updated upstream
-=======
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
->>>>>>> Stashed changes
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
