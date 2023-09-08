@@ -78,6 +78,7 @@ function App() {
                 >
                     <Box sx={{  width: '80%', 
                             height: '50%', 
+                            userSelect: 'none',
                         }}
                     >
                         <Typography variant='h3'
@@ -113,6 +114,7 @@ function App() {
                         maxHeight: '80%',   
                         borderSpacing: '20px',
                         }}
+                        draggable="false"
                     />
                 </Box>
             </Box>
