@@ -114,6 +114,7 @@ function App() {
                 {/* Bottom section with image track*/}
                 <Box sx={{...styles.section}}>
                     <Box sx={{...styles.imageTrack}} >
+                        <img style={styles.image} src="https://source.unsplash.com/random" alt="" draggable="false" />
                         <img style={styles.image} src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" draggable="false" />
                         <img style={styles.image} src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" alt="" draggable="false" />
                         <img style={styles.image} src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" draggable="false" />
