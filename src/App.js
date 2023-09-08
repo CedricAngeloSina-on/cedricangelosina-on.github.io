@@ -88,7 +88,7 @@ function App() {
                         <Typography variant='h1'
                                     sx={{  fontFamily: 'Rubik, sans-serif', fontWeight: '900', color: 'white', fontStyle: 'semibold',
                                 }}>
-                            I make bad design.
+                            I make bad designs.
                         </Typography>
                         <Typography variant='h3'
                                     sx={{  fontFamily: 'Rubik, sans-serif', fontWeight: '600', color: 'white',
