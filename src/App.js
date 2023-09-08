@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import { Box, Paper } from '@mui/material';
+import { Box, Card } from '@mui/material';
 import './gradient-bg.css';
+import JV from './JV.png';
 
 function App() {
   const tilesRef = useRef(null);
@@ -42,28 +43,29 @@ function App() {
 
   return (
     <Box className="body">
-      <Box ref={tilesRef} className="tiles">
-      </Box>
+        <Box ref={tilesRef} className="tiles">
 
-    {/* <Box>
-    <Paper
-            className="centered"
-            sx={{
-              border: '1px solid #ccc',
-              overflow: 'auto',
-              width: 4800,
-              height: 300,
-              zIndex:2,
-              backgroundColor: 'black',
-              color: 'white',
-            }}
-          > 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
-saddddddddddddddddddddd
-          </Paper>
-    </Box> */}
-            
+
+        </Box>
+
+        <Box className="container">
+            <Box className="child">
+                <Box className="child-content">
+                    <Box className="top-left">
+                        <img src={JV} alt="" width="300" />\
+                    </Box>
+                </Box>
+            </Box>
+                <Box className="child">
+                    <Box className="child-content">
+                    </Box>
+            </Box>
+        </Box>
     </Box>
+
+
+
+
   );
 }
 

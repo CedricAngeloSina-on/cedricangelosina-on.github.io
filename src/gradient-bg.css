@@ -25,6 +25,7 @@
   height: 100vh;
   overflow: hidden;
   margin: 0px;
+  display: flex;
 }
 
 .centered {
@@ -32,6 +33,7 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  height: 50%;
 }
 
 .tiles {
@@ -66,3 +68,42 @@
   z-index: 3;
 }
 
+
+
+/* Style for the parent container */
+.container {
+  width: 100vw; /* Adjust the width as needed */
+  height: 100vh; /* Adjust the height as needed */
+  background-attachment: fixed; /* Fixed background */
+  overflow: hidden; /* Prevent scrollbars on the parent container */
+  position: relative; /* Relative positioning for children */
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Style for the child divs */
+.child {
+  width: 100%; /* Take up the full width of the parent */
+  height: 50%; /* Each child is 50% of the container's height */
+  white-space: nowrap; /* Prevent line breaks within child content */
+  display: flex; /* Enable flex layout */
+  align-items: center;
+}
+
+.container .child:nth-child(2) {
+  overflow-x: auto; /* or scroll, hidden, etc. */
+  direction: rtl; 
+}
+
+/* Add some padding to the child divs for content */
+.child-content {
+  flex-direction: row;
+}
+
+.top-left {
+  width: 50vw;
+}
