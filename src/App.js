@@ -61,6 +61,7 @@ function App() {
                         flexDirection: 'column',
                 }}
             >
+
                 {/* Top section with text and image */}
                 <Box sx={{...styles.section}}>
                     <Box sx={{  width: '66%', 
@@ -69,6 +70,19 @@ function App() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                             }}
+
+                <Box sx={{  width: '66%', 
+                            display: 'flex',    
+                            height: '100%', 
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}
+                >
+                    <Box sx={{  width: '80%', 
+                            height: '50%', 
+                            userSelect: 'none',
+                        }}
+
                     >
                         <Box sx={{  width: '80%', 
                                 height: '50%', 
@@ -110,6 +124,28 @@ function App() {
                         />
                     </Box>
                 </Box>
+
+                <Box sx={{  width: '34%', 
+                            height: '100%', 
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'flex-end',     
+                        }}
+                >      
+                    <img
+                        src={Suisei} 
+                        style={{
+                        border: '10px solid rgb(15, 15, 15)',
+                        borderRadius: '25px',
+                        maxWidth: '80%',  
+                        maxHeight: '80%',   
+                        borderSpacing: '20px',
+                        }}
+                        draggable="false"
+                    />
+                </Box>
+            </Box>
+
 
                 {/* Bottom section with image track*/}
                 <Box sx={{...styles.section}}>
